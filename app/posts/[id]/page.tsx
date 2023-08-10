@@ -6,7 +6,7 @@ type Props = {
   }
 }
 
-export async function getData(id) {
+export async function getData(id: string) {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
   return res.json()
 }
